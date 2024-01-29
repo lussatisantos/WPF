@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfPrimeiroContactoCodigo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPrimeiroContactoCodigo"
+        mc:Ignorable="d"
+        Title="Primeiro Exemplo" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnExecutar" Content="Executar" HorizontalAlignment="Center" Margin="0,172,0,0" VerticalAlignment="Top" Width="120" Height="45" Foreground="#FF0D4DEA">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFC31212" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
