@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSalarioLiquidoV1", "WpfSalarioLiquidoV1.csproj", "{54BA6572-5BB0-4796-AD5A-00CE50BD9BC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54BA6572-5BB0-4796-AD5A-00CE50BD9BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54BA6572-5BB0-4796-AD5A-00CE50BD9BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54BA6572-5BB0-4796-AD5A-00CE50BD9BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54BA6572-5BB0-4796-AD5A-00CE50BD9BC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC73F9BC-3C1C-4AF3-81D6-D43D936A92EB}
+	EndGlobalSection
+EndGlobal
