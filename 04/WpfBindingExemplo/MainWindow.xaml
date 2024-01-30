@@ -7,8 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        #dddddddddddddddddddddddddddddddddddd
-        
         <Button x:Name="btnExecutar" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="780" Height="129">
             <Button.Content>
                 <Binding ElementName="txtValor" Path="Text"/>
