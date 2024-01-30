@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfDockPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDockPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel>
+            <Button Content="Botao1" Width="NaN" DockPanel.Dock="top"/>
+            <Button Content="Botao2" Width="NaN" DockPanel.Dock="Left"/>
+            <Button Content="Botao3" Width="NaN" DockPanel.Dock="Bottom"/>
+            <Button Content="Botao4" Width="NaN" DockPanel.Dock="Right"/>
+            <Button Content="Botao10" Width="NaN"/>
+        </DockPanel>
+    </Grid>
+</Window>

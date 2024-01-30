@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDockPanel", "WpfDockPanel.csproj", "{4DDAA23A-96AE-4389-AFDD-2BCD42EDBBA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DDAA23A-96AE-4389-AFDD-2BCD42EDBBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDAA23A-96AE-4389-AFDD-2BCD42EDBBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDAA23A-96AE-4389-AFDD-2BCD42EDBBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDAA23A-96AE-4389-AFDD-2BCD42EDBBA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61592E09-4476-4D77-A964-FAC7FBD46256}
+	EndGlobalSection
+EndGlobal
