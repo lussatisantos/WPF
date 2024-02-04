@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAnimation2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="320" Width="400">
     <Grid>
+        <Rectangle Name="rectangulo" Fill="blue" Height="10" Width="10">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            
+                            <DoubleAnimation Storyboard.TargetName="rectangulo" Storyboard.TargetProperty="Opacity" From="1.0" To="0.0" Duration="0:0:4" AutoReverse="True"/>
+
+                            <DoubleAnimation Storyboard.TargetName="rectangulo" Storyboard.TargetProperty="Height" From="10" To="40" Duration="0:0:4"  BeginTime="0:0:0" AutoReverse="True"/>
+
+                            <DoubleAnimation Storyboard.TargetName="rectangulo" Storyboard.TargetProperty="Width" From="10" To="40" Duration="0:0:4" BeginTime="0:0:4" AutoReverse="True"/>
+
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
 
     </Grid>
 </Window>
