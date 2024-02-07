@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfBindingStaticResources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBindingStaticResources"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400">
+
+    <Window.Resources>
+        <local:Site x:Key="site1" ID="1" Nome="Make Indie Games" Endereco="wwww.makeindiegames.com" />
+    </Window.Resources>
+    <Grid>
+        <Label Content="Codigo" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nome do site" HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Endereco do site" HorizontalAlignment="Left" Margin="259,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69"/>
+        <TextBox x:Name="txtNomeDoSite" HorizontalAlignment="Left" Margin="99,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEnderecoDoSite" HorizontalAlignment="Left" Margin="246,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
+
+    </Grid>
+</Window>
