@@ -14,9 +14,9 @@
         <Label Content="Codigo" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Nome do site" HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Endereco do site" HorizontalAlignment="Left" Margin="259,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69"/>
-        <TextBox x:Name="txtNomeDoSite" HorizontalAlignment="Left" Margin="99,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtEnderecoDoSite" HorizontalAlignment="Left" Margin="246,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
+        <TextBox x:Name="txtCodigo" Text="{Binding Source={StaticResource site1}, Path=ID}" HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69"/>
+        <TextBox x:Name="txtNomeDoSite" Text="{Binding Source={StaticResource site1}, Path=Nome}" HorizontalAlignment="Left" Margin="99,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEnderecoDoSite" Text="{Binding Source={StaticResource site1}, Path=Endereco}" HorizontalAlignment="Left" Margin="246,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
 
     </Grid>
 </Window>
