@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfBindingStaticResources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBindingStaticResources"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400">
+
+    <Window.Resources>
+        <local:Site x:Key="site1" ID="1" Nome="Make Indie Games" Endereco="makeindiegames.com"/>
+    </Window.Resources>
+    <Grid>
+
+        <Label Content="Codigo" HorizontalAlignment="Left" Margin="12,1,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nome do Site" HorizontalAlignment="Left" Margin="144,0,0,0" VerticalAlignment="Top"/>
+        <Label Content="Endereco do site" HorizontalAlignment="Left" Margin="297,1,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding Source={StaticResource site1}, Path=ID}" Margin="10,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding Source={StaticResource site1}, Path=Nome}" Margin="107,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding Source={StaticResource site1}, Path=Endereco}" Margin="253,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+
+        <StackPanel HorizontalAlignment="Center" Height="136" VerticalAlignment="Top" Width="380" Margin="0,55,0,0">
+
+            <StackPanel.DataContext>
+                <Binding Source="{StaticResource site1}"/>
+            </StackPanel.DataContext>
+
+            <Label Content="Codigo" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding ID}" HorizontalAlignment="Left" TextWrapping="Wrap" Width="64" RenderTransformOrigin="-1.844,0.283"/>
+            <Label Content="Nome do Site" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding Nome}" HorizontalAlignment="Left" TextWrapping="Wrap" Width="120"/>
+            <Label Content="Endereco do site" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding Endereco}" HorizontalAlignment="Left" TextWrapping="Wrap" Width="148"/>
+
+        </StackPanel>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="36,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
